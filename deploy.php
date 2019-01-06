@@ -23,9 +23,11 @@ add('writable_dirs', []);
 // Hosts
 
 host('178.62.192.52')
+	->port(2200)
 	->user('wymedia')
-	->identityFile('~/.ssh/gitkey.pub')
-	->set('deploy_path', '/var/www/html/laraveltest');    
+	->identityFile('/Users/wim/Dropbox/keypair_digitalocean_146185179184')
+	->set('deploy_path', '/var/www/html/laravel-test');    
+
 // Tasks
 
 task('build', function () {
